@@ -1,0 +1,204 @@
+/* ----------------------------------------------------- */
+/* CORES E ESTILOS GERAIS (Paleta de Escola Moderna) */
+/* ----------------------------------------------------- */
+
+:root {
+    --cor-primaria: #1A4B8F; /* Azul Institucional Forte */
+    --cor-destaque: #FF8C00; /* Laranja/Amarelo Vibrante para Destaque */
+    --cor-fundo-claro: #F4F7F9; /* Fundo suavemente cinza (Mais sofisticado) */
+    --cor-texto-escuro: #343A40;
+    --fonte-principal: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+    font-family: var(--fonte-principal);
+}
+
+/* Garante o padding lateral para o site em telas grandes */
+.site-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* ESTILO DE COMPONENTES BOOTSTRAP */
+/* ----------------------------------------------------- */
+
+/* Navbar (Cabeçalho do Site) */
+.navbar {
+    background-color: white !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 15px 25px; 
+}
+
+/* Cor do texto do Navbar */
+.navbar-brand {
+    color: var(--cor-primaria) !important; 
+    font-weight: 800; 
+    font-size: 1.4em;
+    letter-spacing: -0.5px;
+}
+
+/* Fundo Primário e Título da Tabela (AZUL INSTITUCIONAL) */
+.bg-primary, 
+.custom-blue-header {
+    background-color: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+    color: white !important;
+}
+
+/* ----------------------------------------------------- */
+/* NOVO ESTILO: BOTÃO FAZER LIGAÇÃO (Principal) */
+/* ----------------------------------------------------- */
+
+.btn-call-now {
+    background-color: var(--cor-destaque) !important; 
+    border-color: var(--cor-destaque) !important;
+    color: white !important;
+    border-radius: 50px !important; 
+    padding: 12px 30px; 
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(255, 140, 0, 0.4); 
+    transition: all 0.3s ease;
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.btn-call-now:hover {
+    background-color: #e67e00 !important; 
+    border-color: #e67e00 !important;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(255, 140, 0, 0.6);
+}
+
+/* Botão Secundário (Google Maps) */
+.btn-primary.btn-outline {
+    border: 2px solid var(--cor-primaria) !important;
+    color: var(--cor-primaria) !important;
+    background-color: transparent !important;
+    border-radius: 50px !important; 
+    padding: 12px 30px; 
+    font-weight: 700;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary.btn-outline:hover {
+    background-color: var(--cor-primaria) !important;
+    color: white !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------------------------------- */
+/* ESTILIZAÇÃO DE SEÇÕES (CARDS) */
+/* ----------------------------------------------------- */
+
+/* Efeito de Cartão */
+.about, .project-actions, .impact, .donate {
+    background-color: white;
+    padding: 40px; 
+    margin-bottom: 50px !important;
+    border-radius: 12px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); 
+    transition: box-shadow 0.3s ease;
+}
+
+.about:hover, .project-actions:hover, .impact:hover, .donate:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); 
+}
+
+
+/* Título Principal do Site */
+header h1 {
+    color: var(--cor-primaria);
+    font-weight: 800; 
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Elemento Geométrico de Fundo no Cabeçalho */
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px !important;
+    background: 
+        linear-gradient(135deg, var(--cor-destaque) 15%, transparent 15%),
+        linear-gradient(to right, var(--cor-fundo-claro) 0%, #E9ECEF 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 15px 15px; 
+}
+
+/* ----------------------------------------------------- */
+/* AJUSTES DE SEÇÃO ESPECÍFICA */
+/* ----------------------------------------------------- */
+
+/* ALINHAMENTO VERTICAL DA HISTÓRIA */
+.about .row {
+    display: flex; 
+    align-items: center; 
+}
+
+/* Estilo para a Imagem */
+.about .img-fluid {
+    border-radius: 12px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    margin-top: 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about .img-fluid:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para o Título H2 das Seções */
+h2 {
+    color: var(--cor-primaria);
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--cor-destaque); 
+    display: inline-block;
+}
+
+/* Estilo para a Tabela */
+.table {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.table thead th {
+    border-bottom: none;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.table tbody tr:hover {
+    background-color: #eaf1f7; 
+}
+
+/* AJUSTE ESPECÍFICO: SEÇÃO IMPACTO (LISTA CUSTOMIZADA) */
+.impact h3 {
+    font-size: 1.4em; 
+    color: var(--cor-destaque); 
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.custom-list li {
+    margin-bottom: 15px;
+    line-height: 1.5; 
+    font-weight: 400; 
+    color: var(--cor-texto-escuro);
+}
+
+.custom-list li span {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: var(--cor-primaria); 
+}

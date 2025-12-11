@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Escola Estadual Gabriel Odorico Machado</title>
+</head>
+
+<body>
+
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            📚 Escola Estadual Gabriel Odorico Machado
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item mx-2">
+                    <a class="btn btn-light nav-btn" href="#historia">Nossa História</a>
+                </li>
+
+                <li class="nav-item mx-2">
+                    <a class="btn btn-light nav-btn" href="#localizacao">Localização</a>
+                </li>
+
+                <li class="nav-item mx-2">
+                    <a class="btn btn-light nav-btn" href="#contato">Contato</a>
+                </li>
+
+                <li class="nav-item mx-2">
+                    <a class="btn btn-light nav-btn" href="#actions-table">Ações e Calendário</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="site-content container mt-5">
+
+        <header class="text-center">
+            <h1>Escola Estadual Gabriel Odorico Machado: Educação e Comunidade</h1> 
+        </header>
+
+       
+        <section class="about mt-5" id="historia">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Nossa História</h2>
+                    <p>A Escola Estadual Gabriel Odorico Machado foi fundada em 1961, na cidade de Bom Despacho, em Minas Gerais. A escola tem uma longa trajetória, contribuindo para a educação da região ao longo das décadas, formando diversas gerações de estudantes. A escolha do nome, "Gabriel Odorico Machado", como é de costume em muitas escolas, pode ter uma relação com a história local ou com uma figura importante para a comunidade.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/escola-gabriel-odorifico.jpg" alt="Fachada da Escola Estadual Gabriel Odorico Machado" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="project-actions mt-5" id="actions-table">
+            <h2> Ações e Calendário da Escola</h2>
+            <table class="table">
+                <thead class="custom-blue-header">
+                    <tr>
+                        <th>Ação</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="2">Carregando dados da planilha...</td></tr> 
+                </tbody>
+            </table>
+        </section>
+
+    
+        <section class="impact mt-5">
+            <h2> Nosso Impacto na Comunidade: A Tradição da Congada</h2>
+            <p>A participação da Escola Estadual Gabriel Odorico e de outras escolas com o Terno Mirim traz benefícios diretos para os estudantes e o ambiente de ensino, unindo a educação formal à rica cultura afro-brasileira local.</p>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3> Sociocultural e de Identidade</h3>
+                    <ul class="list-unstyled custom-list">
+                        <li><span></span> <strong>Preservação da Cultura Afro-Brasileira:</strong> A Congada é um ato de resistência cultural, valorizando a história e a memória do povo negro na região.</li>
+                        <li><span></span> <strong>Fortalecimento da Identidade Local:</strong> A celebração de São Benedito e a Congada criam um sentimento de pertencimento forte entre os moradores e reforça os laços comunitários.</li>
+                        <li><span></span> <strong>Devoção e Fé:</strong> Reforça o forte componente religioso e a devoção a São Benedito, passando a fé de geração em geração.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3> Educacional (Congada Mirim)</h3>
+                    <ul class="list-unstyled custom-list">
+                        <li><span></span> <strong>Educação Antirracista:</strong> A escola trabalha ativamente contra o preconceito e a desvalorização da cultura negra ao incorporar as raízes da Congada.</li>
+                        <li><span></span> <strong>Valorização da Memória:</strong> Os alunos aprendem sobre o passado escravista da região e o papel fundamental dos afrodescendentes na formação cultural de Machado.</li>
+                        <li><span></span> <strong>Formação Integral:</strong> A prática da Congada (dança, canto, toque) desenvolve as potencialidades artísticas e cognitivas dos estudantes, integrando o currículo à cultura popular.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3> Perpetuação e Renovação</h3>
+                    <ul class="list-unstyled custom-list">
+                        <li><span></span> <strong>Garantia da Continuidade:</strong> Os Ternos Mirins da Escola são cruciais para a perpetuação da tradição, garantindo que os ritos, toques e cantos sejam aprendidos pelas novas gerações.</li>
+                        <li><span></span> <strong>Engajamento Comunitário:</strong> O envolvimento da escola mobiliza alunos, pais, professores e a Associação dos Congadeiros, unindo diferentes esferas da comunidade em torno do objetivo cultural.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="donate mt-5 text-center" id="contato">
+            <h2> Como entrar em contato com a Escola</h2>
+            <p>Para informações, dúvidas ou contato com a secretaria, ligue diretamente para a escola. Estamos prontos para atender você.</p>
+
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4 text-md-start" id="localizacao">
+                    <h3 class="mb-3">Nossa Localização</h3>
+                    <p>
+                        A escola está localizada em <strong>Machado, Minas Gerais</strong>.
+                        <br>
+                        <strong>Endereço:</strong> Av. Santa Cruz, 315 - Centro, Machado - MG, 37750-000.
+                    </p>
+
+                    <a href="https://maps.google.com/?cid=15240094057183443956" target="_blank" class="btn btn-primary btn-outline mt-3">Ver no Google Maps</a>
+                </div>
+
+                <div class="col-md-6 mb-4 text-md-start">
+                    <h3 class="mb-3">Fale Conosco</h3>
+                    <p>O telefone da escola é: +55 35 3295-1349.</p>
+                    
+                    <a href="tel:+553532951349" class="btn btn-call-now btn-lg mt-3">
+                         Ligar Agora: (35) 3295-1349
+                    </a>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.163353528247!2d-45.92207942475143!3d-22.3879025178553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c979685a5e305d%3A0x7d251d2f78e47f52!2sE.E.%20Gabriel%20Odorico!5e0!3m2!1spt-BR!2sbr!4v1704285880785!5m2!1spt-BR!2sbr" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center mt-5 py-3">
+        <p>© 2025 Escola Estadual Gabriel Odorico - Machado</p>
+    </footer>
+
+    <script src="https://apis.google.com/js/api.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
